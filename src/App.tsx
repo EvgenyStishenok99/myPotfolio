@@ -1,14 +1,21 @@
 import './App.css'
-// import styled from "styled-components";
+import styled from "styled-components";
 import {Header} from "./layout/header/Header.tsx"
+import {SpaMain} from "./layout/spaMain/SpaMain.tsx";
 
 function App() {
     return (
-        <div className="App">
+        <AppStyle>
             <Header/>
-        </div>
+            <SpaMain/>
+        </AppStyle>
     )
 }
 
 export default App
+
+
+const AppStyle = styled.div`
+  //background-color: black;
+`
 
