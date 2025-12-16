@@ -21,4 +21,4 @@ gap:306px;
   position: sticky;
   top: 0; /* Элемент "прилипнет", когда его верхний край коснется верха окна */
   z-index: 1000;
-  background-color: white;`
+  background-color: transparent;`
