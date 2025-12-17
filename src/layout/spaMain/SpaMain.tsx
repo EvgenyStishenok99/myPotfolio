@@ -32,8 +32,8 @@ const SpaMainStyle =  styled.div`
   margin: 246px 0 291px 0;
   .svg-background {
     position: absolute;
-    top: 62%;
-    left: 80%;
+    top: 66%;
+    left: 78%;
     transform: translate(-50%, -50%);
     z-index: -1;
     pointer-events: none;
