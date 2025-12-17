@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {LineBottom} from "../../components/lineBottom/LineBottom.tsx";
 
 
 export const SpaAbout = () => {
@@ -52,7 +53,7 @@ export const SpaAbout = () => {
     </div>
 
   </div>
-  <hr className="lineBottom"/>
+  <LineBottom/>
   <div className="blockForWorkExperience">
     <div className="leftSide">
       <h2>Web Development Intern</h2>
@@ -92,7 +93,7 @@ export const SpaAbout = () => {
     </div>
 
   </div>
-  <hr className="lineBottom"/>
+  <LineBottom/>
   <div className="blockForWorkExperience">
     <div className="leftSide">
       <h2>SEO / SEM Specialist</h2>
@@ -132,7 +133,7 @@ export const SpaAbout = () => {
     </div>
 
   </div>
-  <hr className="lineBottom"/>
+  <LineBottom/>
   <h1>Education</h1>
   <div className="blockForWorkExperience">
     <div className="leftSide">
@@ -164,7 +165,7 @@ export const SpaAbout = () => {
     </div>
 
   </div>
-  <hr className="lineBottom"/>
+  <LineBottom/>
 </div>
 
     </SpaAboutStyles>
@@ -263,17 +264,5 @@ const SpaAboutStyles = styled.div`
     display: flex;
     justify-content: space-between;
   }
-  .lineBottom{
-    height: 2px;
-   
-margin-top: 24px;
-    background: #ebeaed;
-    margin-bottom: 30px;
-   
-
-   
-    
-
-   
-  }
+  
 `
