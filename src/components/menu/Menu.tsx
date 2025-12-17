@@ -14,5 +14,5 @@ export const Menu = () => {
 
 const MenuStyle =  styled.nav`
   display: flex;
- 
+ justify-content: space-between;
 `

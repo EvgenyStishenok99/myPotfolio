@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {Header} from "./layout/header/Header.tsx"
 import {SpaMain} from "./layout/spaMain/SpaMain.tsx";
 import {SpaAbout} from "./layout/spaAbout/SpaAbout.tsx";
+import {SpaSkills} from "./layout/spaSkills/SpaSkills.tsx";
 
 function App() {
     return (
@@ -10,7 +11,8 @@ function App() {
           <div className="Container">
             <Header/>
             <SpaMain/>
-          <SpaAbout/>
+            <SpaAbout/>
+            <SpaSkills/>
           </div>
         </AppStyle>
     )
@@ -25,10 +27,12 @@ const AppStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+  
   .Container {
-    
+    max-width: 1230px;
     border: 2px solid #0039ff;
-    //max-width: 1193px;
+   
   }
 
 `

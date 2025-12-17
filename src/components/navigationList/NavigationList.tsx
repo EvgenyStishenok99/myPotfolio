@@ -26,8 +26,9 @@ export const NavigationList = () => {
 const NavigationListStyle = styled.ul`
   align-items: center;
   display: flex;
-  gap:50px;
+  gap:66px;
   list-style: none;
+  
   a{
     text-decoration: none;
     font-family: "DM Sans", sans-serif;
