@@ -4,6 +4,7 @@ import {Header} from "./layout/header/Header.tsx"
 import {SpaMain} from "./layout/spaMain/SpaMain.tsx";
 import {SpaAbout} from "./layout/spaAbout/SpaAbout.tsx";
 import {SpaSkills} from "./layout/spaSkills/SpaSkills.tsx";
+import {SpaProjects} from "./layout/spaProjects/SpaProjects.tsx";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
             <SpaMain/>
             <SpaAbout/>
             <SpaSkills/>
+            <SpaProjects/>
           </div>
         </AppStyle>
     )
