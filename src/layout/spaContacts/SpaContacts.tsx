@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {Footer} from "./Footer.tsx";
 
 
 export const SpaContacts = () => {
@@ -7,7 +8,10 @@ export const SpaContacts = () => {
     <div className="myAmail">
       <p className="textForamail">For any questions please mail me:</p>
       <p className="Amail">stishenok999@mail.ru</p>
+
     </div>
+      <Footer/>
+
     </SpaContactsStyles>
   );
 };

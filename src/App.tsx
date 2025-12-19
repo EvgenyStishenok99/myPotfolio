@@ -27,7 +27,7 @@ export default App
 
 const AppStyle = styled.div`
   background-color: whitesmoke;
-  border: 2px solid #ff5733;
+  //border: 2px solid #ff5733;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -35,7 +35,7 @@ const AppStyle = styled.div`
   
   .Container {
     max-width: 1230px;
-    border: 2px solid #0039ff;
+    //border: 2px solid #0039ff;
     
    
   }
