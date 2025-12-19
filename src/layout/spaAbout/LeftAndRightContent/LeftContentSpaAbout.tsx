@@ -6,16 +6,17 @@ export const LeftContentSpaAbout = () => {
   return (
     <LeftContentSpaAboutStyle>
       <h1>About Me</h1>
-      <p className="forAboutMe">The Generator App is an online tool that helps
-        you to export ready-made templates ready to work
-        as your future website. It helps you to combine slides,
-        panels and other components and export
-        it as a set of static files: HTML/CSS/JS.
+      <p className="forAboutMe">TEntry-level Web Developer
+        with strong theoretical knowledge and high
+        motivation to learn. Currently honing my practical skills in
+        JavaScript and React.js. I am a diligent, detail-focused individual
+        looking to launch my career, grow professionally, and add value to
+        a development team.
       </p>
       <h1>Work Experience</h1>
       <div className="blockForWorkExperience">
         <div className="leftSide">
-          <h2>Junior Web Developer</h2>
+          <h2>Loader</h2>
           <div className="bottomOfBlock">
             <div className="leftBottomOfBlock">
               <div className="svgPictures">
@@ -23,7 +24,7 @@ export const LeftContentSpaAbout = () => {
                   <path d="M3.33325 1.5V10.5H7.33325V8.75H8.66659V10.5H12.6666V1.5H3.33325ZM4.66659 2.5H5.99992V3.5H4.66659V2.5ZM7.33325 2.5H8.66659V3.5H7.33325V2.5ZM9.99992 2.5H11.3333V3.5H9.99992V2.5ZM4.66659 4.5H5.99992V5.5H4.66659V4.5ZM7.33325 4.5H8.66659V5.5H7.33325V4.5ZM9.99992 4.5H11.3333V5.5H9.99992V4.5ZM4.66659 6.5H5.99992V7.5H4.66659V6.5ZM7.33325 6.5H8.66659V7.5H7.33325V6.5ZM9.99992 6.5H11.3333V7.5H9.99992V6.5ZM4.66659 8.5H5.99992V9.5H4.66659V8.5ZM9.99992 8.5H11.3333V9.5H9.99992V8.5Z" fill="#A7A7A7" />
                 </svg>
               </div>
-              <p className="place">Dr. Rajkumar’s Learning App</p>
+              <p className="place">Wherever they invite me</p>
             </div>
             <div className="rightBottomOfBlock">
               <div className="svgPictures">
@@ -32,7 +33,7 @@ export const LeftContentSpaAbout = () => {
                   <path d="M8.00001 11.25L3.78201 7.51912C3.7234 7.4631 3.66539 7.40673 3.60801 7.35C2.8875 6.63817 2.49826 5.76871 2.50001 4.875C2.50001 3.78098 3.07947 2.73177 4.11092 1.95818C5.14237 1.1846 6.54132 0.75 8.00001 0.75C9.4587 0.75 10.8576 1.1846 11.8891 1.95818C12.9205 2.73177 13.5 3.78098 13.5 4.875C13.5018 5.7683 13.1127 6.63737 12.3925 7.34888L12.392 7.35C12.392 7.35 12.242 7.49775 12.2195 7.51763L8.00001 11.25ZM4.40601 6.89813C4.40701 6.89813 4.52301 7.01362 4.54951 7.03837L8.00001 10.0905L11.455 7.03425C11.477 7.01362 11.594 6.89738 11.5945 6.897C12.1831 6.31542 12.5012 5.60514 12.5 4.875C12.5 3.97989 12.0259 3.12145 11.182 2.48851C10.3381 1.85558 9.19348 1.5 8.00001 1.5C6.80653 1.5 5.66194 1.85558 4.81803 2.48851C3.97411 3.12145 3.50001 3.97989 3.50001 4.875C3.49896 5.60559 3.81739 6.31628 4.40651 6.89813H4.40601Z" fill="#A7A7A7" />
                 </svg>
               </div>
-              <p className="place">Bengaluru</p>
+              <p className="place">Minsk</p>
             </div>
           </div>
         </div>
@@ -47,7 +48,7 @@ export const LeftContentSpaAbout = () => {
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 1.5C3.46957 1.5 2.96086 1.65804 2.58579 1.93934C2.21071 2.22064 2 2.60218 2 3V9C2 9.39782 2.21071 9.77936 2.58579 10.0607C2.96086 10.342 3.46957 10.5 4 10.5H12C12.5304 10.5 13.0391 10.342 13.4142 10.0607C13.7893 9.77936 14 9.39782 14 9V3C14 2.60218 13.7893 2.22064 13.4142 1.93934C13.0391 1.65804 12.5304 1.5 12 1.5H4ZM12 2.5H4C3.82319 2.5 3.65362 2.55268 3.5286 2.64645C3.40357 2.74021 3.33333 2.86739 3.33333 3V9C3.33333 9.13261 3.40357 9.25979 3.5286 9.35355C3.65362 9.44732 3.82319 9.5 4 9.5H12C12.1768 9.5 12.3464 9.44732 12.4714 9.35355C12.5964 9.25979 12.6667 9.13261 12.6667 9V3C12.6667 2.86739 12.5964 2.74021 12.4714 2.64645C12.3464 2.55268 12.1768 2.5 12 2.5Z" fill="#A7A7A7" />
               </svg>
             </div>
-            <p className="place">Sep 2021 - Dec 2021</p>
+            <p className="place">Sep 2016 - Dec 2017</p>
           </div>
         </div>
 
@@ -55,7 +56,7 @@ export const LeftContentSpaAbout = () => {
       <LineBottom/>
       <div className="blockForWorkExperience">
         <div className="leftSide">
-          <h2>Web Development Intern</h2>
+          <h2>Sales consultant</h2>
           <div className="bottomOfBlock">
             <div className="leftBottomOfBlock">
               <div className="svgPictures">
@@ -63,7 +64,7 @@ export const LeftContentSpaAbout = () => {
                   <path d="M3.33325 1.5V10.5H7.33325V8.75H8.66659V10.5H12.6666V1.5H3.33325ZM4.66659 2.5H5.99992V3.5H4.66659V2.5ZM7.33325 2.5H8.66659V3.5H7.33325V2.5ZM9.99992 2.5H11.3333V3.5H9.99992V2.5ZM4.66659 4.5H5.99992V5.5H4.66659V4.5ZM7.33325 4.5H8.66659V5.5H7.33325V4.5ZM9.99992 4.5H11.3333V5.5H9.99992V4.5ZM4.66659 6.5H5.99992V7.5H4.66659V6.5ZM7.33325 6.5H8.66659V7.5H7.33325V6.5ZM9.99992 6.5H11.3333V7.5H9.99992V6.5ZM4.66659 8.5H5.99992V9.5H4.66659V8.5ZM9.99992 8.5H11.3333V9.5H9.99992V8.5Z" fill="#A7A7A7" />
                 </svg>
               </div>
-              <p className="place">IonPixelz Web Solutions</p>
+              <p className="place">Football store</p>
             </div>
             <div className="rightBottomOfBlock">
               <div className="svgPictures">
@@ -72,7 +73,7 @@ export const LeftContentSpaAbout = () => {
                   <path d="M8.00001 11.25L3.78201 7.51912C3.7234 7.4631 3.66539 7.40673 3.60801 7.35C2.8875 6.63817 2.49826 5.76871 2.50001 4.875C2.50001 3.78098 3.07947 2.73177 4.11092 1.95818C5.14237 1.1846 6.54132 0.75 8.00001 0.75C9.4587 0.75 10.8576 1.1846 11.8891 1.95818C12.9205 2.73177 13.5 3.78098 13.5 4.875C13.5018 5.7683 13.1127 6.63737 12.3925 7.34888L12.392 7.35C12.392 7.35 12.242 7.49775 12.2195 7.51763L8.00001 11.25ZM4.40601 6.89813C4.40701 6.89813 4.52301 7.01362 4.54951 7.03837L8.00001 10.0905L11.455 7.03425C11.477 7.01362 11.594 6.89738 11.5945 6.897C12.1831 6.31542 12.5012 5.60514 12.5 4.875C12.5 3.97989 12.0259 3.12145 11.182 2.48851C10.3381 1.85558 9.19348 1.5 8.00001 1.5C6.80653 1.5 5.66194 1.85558 4.81803 2.48851C3.97411 3.12145 3.50001 3.97989 3.50001 4.875C3.49896 5.60559 3.81739 6.31628 4.40651 6.89813H4.40601Z" fill="#A7A7A7" />
                 </svg>
               </div>
-              <p className="place">Bengaluru</p>
+              <p className="place">Minsk</p>
             </div>
           </div>
         </div>
@@ -87,7 +88,7 @@ export const LeftContentSpaAbout = () => {
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 1.5C3.46957 1.5 2.96086 1.65804 2.58579 1.93934C2.21071 2.22064 2 2.60218 2 3V9C2 9.39782 2.21071 9.77936 2.58579 10.0607C2.96086 10.342 3.46957 10.5 4 10.5H12C12.5304 10.5 13.0391 10.342 13.4142 10.0607C13.7893 9.77936 14 9.39782 14 9V3C14 2.60218 13.7893 2.22064 13.4142 1.93934C13.0391 1.65804 12.5304 1.5 12 1.5H4ZM12 2.5H4C3.82319 2.5 3.65362 2.55268 3.5286 2.64645C3.40357 2.74021 3.33333 2.86739 3.33333 3V9C3.33333 9.13261 3.40357 9.25979 3.5286 9.35355C3.65362 9.44732 3.82319 9.5 4 9.5H12C12.1768 9.5 12.3464 9.44732 12.4714 9.35355C12.5964 9.25979 12.6667 9.13261 12.6667 9V3C12.6667 2.86739 12.5964 2.74021 12.4714 2.64645C12.3464 2.55268 12.1768 2.5 12 2.5Z" fill="#A7A7A7" />
               </svg>
             </div>
-            <p className="place">Sep 2021 - Dec 2021</p>
+            <p className="place">Sep 2018 - Dec 2019</p>
           </div>
         </div>
 
@@ -95,7 +96,7 @@ export const LeftContentSpaAbout = () => {
       <LineBottom/>
       <div className="blockForWorkExperience">
         <div className="leftSide">
-          <h2>SEO / SEM Specialist</h2>
+          <h2>Compressor operator</h2>
           <div className="bottomOfBlock">
             <div className="leftBottomOfBlock">
               <div className="svgPictures">
@@ -103,7 +104,7 @@ export const LeftContentSpaAbout = () => {
                   <path d="M3.33325 1.5V10.5H7.33325V8.75H8.66659V10.5H12.6666V1.5H3.33325ZM4.66659 2.5H5.99992V3.5H4.66659V2.5ZM7.33325 2.5H8.66659V3.5H7.33325V2.5ZM9.99992 2.5H11.3333V3.5H9.99992V2.5ZM4.66659 4.5H5.99992V5.5H4.66659V4.5ZM7.33325 4.5H8.66659V5.5H7.33325V4.5ZM9.99992 4.5H11.3333V5.5H9.99992V4.5ZM4.66659 6.5H5.99992V7.5H4.66659V6.5ZM7.33325 6.5H8.66659V7.5H7.33325V6.5ZM9.99992 6.5H11.3333V7.5H9.99992V6.5ZM4.66659 8.5H5.99992V9.5H4.66659V8.5ZM9.99992 8.5H11.3333V9.5H9.99992V8.5Z" fill="#A7A7A7" />
                 </svg>
               </div>
-              <p className="place">HAAPS</p>
+              <p className="place">Mozyr Oil Refinery</p>
             </div>
             <div className="rightBottomOfBlock">
               <div className="svgPictures">
@@ -112,7 +113,7 @@ export const LeftContentSpaAbout = () => {
                   <path d="M8.00001 11.25L3.78201 7.51912C3.7234 7.4631 3.66539 7.40673 3.60801 7.35C2.8875 6.63817 2.49826 5.76871 2.50001 4.875C2.50001 3.78098 3.07947 2.73177 4.11092 1.95818C5.14237 1.1846 6.54132 0.75 8.00001 0.75C9.4587 0.75 10.8576 1.1846 11.8891 1.95818C12.9205 2.73177 13.5 3.78098 13.5 4.875C13.5018 5.7683 13.1127 6.63737 12.3925 7.34888L12.392 7.35C12.392 7.35 12.242 7.49775 12.2195 7.51763L8.00001 11.25ZM4.40601 6.89813C4.40701 6.89813 4.52301 7.01362 4.54951 7.03837L8.00001 10.0905L11.455 7.03425C11.477 7.01362 11.594 6.89738 11.5945 6.897C12.1831 6.31542 12.5012 5.60514 12.5 4.875C12.5 3.97989 12.0259 3.12145 11.182 2.48851C10.3381 1.85558 9.19348 1.5 8.00001 1.5C6.80653 1.5 5.66194 1.85558 4.81803 2.48851C3.97411 3.12145 3.50001 3.97989 3.50001 4.875C3.49896 5.60559 3.81739 6.31628 4.40651 6.89813H4.40601Z" fill="#A7A7A7" />
                 </svg>
               </div>
-              <p className="place">Bengaluru</p>
+              <p className="place">Mozyr</p>
             </div>
           </div>
         </div>
@@ -127,7 +128,7 @@ export const LeftContentSpaAbout = () => {
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 1.5C3.46957 1.5 2.96086 1.65804 2.58579 1.93934C2.21071 2.22064 2 2.60218 2 3V9C2 9.39782 2.21071 9.77936 2.58579 10.0607C2.96086 10.342 3.46957 10.5 4 10.5H12C12.5304 10.5 13.0391 10.342 13.4142 10.0607C13.7893 9.77936 14 9.39782 14 9V3C14 2.60218 13.7893 2.22064 13.4142 1.93934C13.0391 1.65804 12.5304 1.5 12 1.5H4ZM12 2.5H4C3.82319 2.5 3.65362 2.55268 3.5286 2.64645C3.40357 2.74021 3.33333 2.86739 3.33333 3V9C3.33333 9.13261 3.40357 9.25979 3.5286 9.35355C3.65362 9.44732 3.82319 9.5 4 9.5H12C12.1768 9.5 12.3464 9.44732 12.4714 9.35355C12.5964 9.25979 12.6667 9.13261 12.6667 9V3C12.6667 2.86739 12.5964 2.74021 12.4714 2.64645C12.3464 2.55268 12.1768 2.5 12 2.5Z" fill="#A7A7A7" />
               </svg>
             </div>
-            <p className="place">Sep 2021 - Dec 2021</p>
+            <p className="place">Jan 2021 - To date...</p>
           </div>
         </div>
 
@@ -136,7 +137,7 @@ export const LeftContentSpaAbout = () => {
       <h1>Education</h1>
       <div className="blockForWorkExperience">
         <div className="leftSide">
-          <h2>Bachelor in Electronics & Communication</h2>
+          <h2>Mechanical engineer</h2>
           <div className="bottomOfBlock">
             <div className="leftBottomOfBlock">
               <div className="svgPictures">
@@ -144,7 +145,7 @@ export const LeftContentSpaAbout = () => {
                   <path d="M3.33325 1.5V10.5H7.33325V8.75H8.66659V10.5H12.6666V1.5H3.33325ZM4.66659 2.5H5.99992V3.5H4.66659V2.5ZM7.33325 2.5H8.66659V3.5H7.33325V2.5ZM9.99992 2.5H11.3333V3.5H9.99992V2.5ZM4.66659 4.5H5.99992V5.5H4.66659V4.5ZM7.33325 4.5H8.66659V5.5H7.33325V4.5ZM9.99992 4.5H11.3333V5.5H9.99992V4.5ZM4.66659 6.5H5.99992V7.5H4.66659V6.5ZM7.33325 6.5H8.66659V7.5H7.33325V6.5ZM9.99992 6.5H11.3333V7.5H9.99992V6.5ZM4.66659 8.5H5.99992V9.5H4.66659V8.5ZM9.99992 8.5H11.3333V9.5H9.99992V8.5Z" fill="#A7A7A7" />
                 </svg>
               </div>
-              <p className="place">Bangalore Instutute of Technology</p>
+              <p className="place">Belarusian State Technological University</p>
             </div>
           </div>
         </div>
@@ -159,7 +160,7 @@ export const LeftContentSpaAbout = () => {
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M4 1.5C3.46957 1.5 2.96086 1.65804 2.58579 1.93934C2.21071 2.22064 2 2.60218 2 3V9C2 9.39782 2.21071 9.77936 2.58579 10.0607C2.96086 10.342 3.46957 10.5 4 10.5H12C12.5304 10.5 13.0391 10.342 13.4142 10.0607C13.7893 9.77936 14 9.39782 14 9V3C14 2.60218 13.7893 2.22064 13.4142 1.93934C13.0391 1.65804 12.5304 1.5 12 1.5H4ZM12 2.5H4C3.82319 2.5 3.65362 2.55268 3.5286 2.64645C3.40357 2.74021 3.33333 2.86739 3.33333 3V9C3.33333 9.13261 3.40357 9.25979 3.5286 9.35355C3.65362 9.44732 3.82319 9.5 4 9.5H12C12.1768 9.5 12.3464 9.44732 12.4714 9.35355C12.5964 9.25979 12.6667 9.13261 12.6667 9V3C12.6667 2.86739 12.5964 2.74021 12.4714 2.64645C12.3464 2.55268 12.1768 2.5 12 2.5Z" fill="#A7A7A7" />
               </svg>
             </div>
-            <p className="place">Aug 2015 - Dec 2020</p>
+            <p className="place">Aug 2016 - Jan 2021</p>
           </div>
         </div>
 

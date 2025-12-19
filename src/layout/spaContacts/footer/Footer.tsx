@@ -17,8 +17,8 @@ export const Footer = () => {
       <div className="topPart">
         <LogoBlack/>
         <div className="rightTopPart">
-          <p className="numberAndMail">+91 12345 09876</p>
-          <p className="numberAndMail">info@example.com</p>
+          <p className="numberAndMail">+375 33 653 65 07</p>
+          <p className="numberAndMail">samurai.it-incubator.io/ru</p>
           <SocialMediaDarkBlue/>
         </div>
       </div>
