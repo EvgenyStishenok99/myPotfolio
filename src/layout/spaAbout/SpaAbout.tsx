@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import {LeftContentSpaAbout} from "./LeftContentSpaAbout.tsx";
-import {PicturesForRightContent} from "./picturesForRightContent.tsx";
+import {LeftContentSpaAbout} from "./LeftAndRightContent/LeftContentSpaAbout.tsx";
+import {PicturesForRightContent} from "./LeftAndRightContent/picturesForRightContent.tsx";
 
 
 

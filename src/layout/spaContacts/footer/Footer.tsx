@@ -1,14 +1,14 @@
 import styled from "styled-components";
-import {LineBottom} from "../../components/lineBottom/LineBottom.tsx";
+import {LineBottom} from "../../../components/lineBottom/LineBottom.tsx";
 
 
-import {LogoBlack} from "../../components/logo/logoBlack.tsx";
+import {LogoBlack} from "../../../components/logo/logoBlack.tsx";
 import {
   SocialMediaDarkBlue
-} from "../../components/social media/SocialMediaDarkBlue.tsx";
+} from "../../../components/social media/SocialMediaDarkBlue.tsx";
 import {
   NavigationList18pxForFooter
-} from "../../components/navigationList/NavigationList18pxForFooter.tsx";
+} from "../../../components/navigationList/NavigationList18pxForFooter.tsx";
 
 
 export const Footer = () => {

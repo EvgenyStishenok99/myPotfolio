@@ -1,4 +1,4 @@
-import {LineBottom} from "../../components/lineBottom/LineBottom.tsx";
+import {LineBottom} from "../../../components/lineBottom/LineBottom.tsx";
 import styled from "styled-components";
 
 
