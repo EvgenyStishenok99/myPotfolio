@@ -5,6 +5,7 @@ import {SpaMain} from "./layout/spaMain/SpaMain.tsx";
 import {SpaAbout} from "./layout/spaAbout/SpaAbout.tsx";
 import {SpaSkills} from "./layout/spaSkills/SpaSkills.tsx";
 import {SpaProjects} from "./layout/spaProjects/SpaProjects.tsx";
+import {SpaContacts} from "./layout/spaContacts/SpaContacts.tsx";
 
 function App() {
     return (
@@ -15,6 +16,7 @@ function App() {
             <SpaAbout/>
             <SpaSkills/>
             <SpaProjects/>
+            <SpaContacts/>
           </div>
         </AppStyle>
     )
@@ -24,7 +26,7 @@ export default App
 
 
 const AppStyle = styled.div`
-  //background-color: black;
+  background-color: whitesmoke;
   border: 2px solid #ff5733;
   display: flex;
   flex-direction: column;
@@ -34,8 +36,10 @@ const AppStyle = styled.div`
   .Container {
     max-width: 1230px;
     border: 2px solid #0039ff;
+    
    
   }
+  
 
 `
 

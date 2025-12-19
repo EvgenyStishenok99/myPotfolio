@@ -8,7 +8,7 @@ export const SpaMain = () => {
     <span>
 Hi 👋,<br/>
 My name is<br/>
-<mark>Evgeny ST</mark><br/>
+<mark className="myName">Evgeny ST</mark><br/>
 I build things for web
     </span>
       <div className="svg-background">
@@ -46,7 +46,7 @@ const SpaMainStyle =  styled.div`
       opacity: 0.25;
     }
   }
-mark{
+  .myName{
     background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
     background-clip: text;
     -webkit-background-clip: text;

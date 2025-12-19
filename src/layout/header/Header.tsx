@@ -15,14 +15,14 @@ export const Header = () => {
 
 const StyleHeader =  styled.header`
   //background-color: #5cda5c;
-display: flex;
-gap:306px;
+  display: flex;
+  gap: 306px;
 
   position: sticky;
   top: 0; /* Элемент "прилипнет", когда его верхний край коснется верха окна */
   z-index: 1000;
-  background-color: white;
+  background-color: rgb(245, 245, 245, 0.8);
 
-//min-width: 1193px;
-//min-height: 59px;
+  //min-width: 1193px;
+  //min-height: 59px;
 `
