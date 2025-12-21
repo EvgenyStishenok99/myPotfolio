@@ -6,7 +6,7 @@ import {PicturesForRightContent} from "./LeftAndRightContent/picturesForRightCon
 
 export const SpaAbout = () => {
   return (
-    <SpaAboutStyles>
+    <SpaAboutStyles id="SpaAbout">
       <LeftContentSpaAbout/>
       <PicturesForRightContent/>
     </SpaAboutStyles>
@@ -14,6 +14,6 @@ export const SpaAbout = () => {
 };
 
 const SpaAboutStyles = styled.div`
-  margin: 200px 0;
+  padding-top: 200px;
   display: flex;
 `

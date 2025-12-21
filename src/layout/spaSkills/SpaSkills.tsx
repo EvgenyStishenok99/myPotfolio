@@ -6,7 +6,7 @@ import {
 
 export const SpaSkills = () => {
   return (
-    <SpaSkillsStyle>
+    <SpaSkillsStyle id="SpaSkills">
 <div className="topBlock">
   <h1 className="mainH1">My Tech Stack</h1>
     <p className="mainP"> Technologies I’ve been working with recently</p>
@@ -17,7 +17,8 @@ export const SpaSkills = () => {
 };
 
 const SpaSkillsStyle=styled.div`
-  margin-bottom: 201px;
+  padding-top: 201px  ;
+  
   .topBlock{
     margin-bottom: 124px;
   }

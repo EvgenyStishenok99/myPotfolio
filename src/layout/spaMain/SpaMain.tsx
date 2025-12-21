@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const SpaMain = () => {
   return (
-    <SpaMainStyle>
+    <SpaMainStyle id="SpaMain">
 
     <span>
 Hi 👋,<br/>
@@ -29,7 +29,7 @@ I build things for web
 const SpaMainStyle =  styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 246px 0 291px 0;
+  padding: 246px 0 291px 0;
   .svg-background {
     position: absolute;
     top: 66%;

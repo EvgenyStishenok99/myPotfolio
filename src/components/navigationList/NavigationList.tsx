@@ -1,23 +1,25 @@
 import styled from "styled-components";
 
 
+
+
 export const NavigationList = () => {
   return (
     <NavigationListStyle>
       <li>
-        <a href="">Home</a>
+        <a href="#SpaMain">Home</a>
       </li>
       <li>
-        <a href="">About</a>
+        <a href="#SpaAbout">About</a>
       </li>
       <li>
-        <a href="">Tech Stack</a>
+        <a href="#SpaSkills">Tech Stack</a>
       </li>
       <li>
-        <a href="">Projects</a>
+        <a href="#SpaProjects">Projects</a>
       </li>
       <li>
-        <a href="">Contact</a>
+        <a href="#SpaContacts">Contact</a>
       </li>
     </NavigationListStyle>
   );

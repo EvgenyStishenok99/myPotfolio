@@ -4,7 +4,7 @@ import {Footer} from "./footer/Footer.tsx";
 
 export const SpaContacts = () => {
   return (
-    <SpaContactsStyles>
+    <SpaContactsStyles id="SpaContacts">
     <div className="myAmail">
       <p className="textForamail">For any questions please mail me:</p>
       <p className="Amail">stishenok999@mail.ru</p>
@@ -17,13 +17,14 @@ export const SpaContacts = () => {
 };
 
 const SpaContactsStyles = styled.div`
+  padding-top: 50px;
   .myAmail {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
   .textForamail{
-    margin: 200px 0 9px 0 ;
+    margin: 0 0 9px 0 ;
     font-weight: 700;
     font-size: 58px;
     line-height: 121%;

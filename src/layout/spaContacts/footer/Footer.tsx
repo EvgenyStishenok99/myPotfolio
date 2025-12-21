@@ -23,7 +23,7 @@ export const Footer = () => {
         </div>
       </div>
       <LineBottom/>
-      <div className="bottonPart">
+      <div className="bottomPart">
         <NavigationList18pxForFooter/>
         <p className="signature">Designed and
           built by <mark className="EvgenyST">Evgeny ST</mark> with
@@ -35,6 +35,7 @@ export const Footer = () => {
 };
 
 const FooterStyles = styled.div`
+  margin-top: auto; /* для прижатия к низу */
   .topPart{
     display: flex;
     justify-content: space-between;
@@ -51,7 +52,7 @@ const FooterStyles = styled.div`
     line-height: 144%;
     color: #42446e;
   }
-  .bottonPart{
+  .bottomPart{
     display: flex;
     justify-content: space-between;
   }

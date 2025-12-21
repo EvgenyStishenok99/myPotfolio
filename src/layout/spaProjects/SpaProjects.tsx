@@ -4,7 +4,7 @@ import {MyProjects} from "./myProjects/MyProjects.tsx";
 
 export const SpaProjects = () => {
   return (
-    <SpaProjectsStyles>
+    <SpaProjectsStyles id="SpaProjects">
       <div className="topBlock">
         <h1 className="mainH1">Projects</h1>
         <p className="mainP"> Things I’ve built so far</p>
@@ -15,6 +15,7 @@ export const SpaProjects = () => {
 };
 
 const SpaProjectsStyles = styled.div`
+  padding-top: 201px;
   font-family: "Poppins", sans-serif;
   .mainH1 {
 

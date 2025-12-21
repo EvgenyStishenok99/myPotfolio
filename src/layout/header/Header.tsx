@@ -6,7 +6,7 @@ import {Menu} from "../../components/menu/Menu.tsx";
 
 export const Header = () => {
   return (
-    <StyleHeader>
+    <StyleHeader >
      <Logo/>
      <Menu/>
     </StyleHeader>
