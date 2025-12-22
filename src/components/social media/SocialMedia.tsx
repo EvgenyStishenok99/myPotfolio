@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import {
   GitHubGrey
-} from "../../../public/svg for social media /GitHubGrey.tsx";
+} from "../../../public/svg for social media /grey/GitHubGrey.tsx";
 import {
   TwitterGrey
-} from "../../../public/svg for social media /TwitterGrey.tsx";
+} from "../../../public/svg for social media /grey/TwitterGrey.tsx";
 import {
   LinkedinGrey
-} from "../../../public/svg for social media /LinkedinGrey.tsx";
+} from "../../../public/svg for social media /grey/LinkedinGrey.tsx";
 
 
 export const SocialMedia = () => {
