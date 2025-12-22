@@ -2,23 +2,21 @@ import styled from "styled-components";
 
 
 export const NavigationList18pxForFooter = () => {
+  const navItems = [
+    { href: "#SpaMain", text: "Home" },
+    { href: "#SpaAbout", text: "About" },
+    { href: "#SpaSkills", text: "Tech Stack" },
+    { href: "#SpaProjects", text: "Projects" },
+    { href: "#SpaContacts", text: "Contact" }
+  ];
   return (
+
     <NavigationListStyle>
-      <li>
-        <a href="#SpaMain">Home</a>
-      </li>
-      <li>
-        <a href="#SpaAbout">About</a>
-      </li>
-      <li>
-        <a href="#SpaSkills">Tech Stack</a>
-      </li>
-      <li>
-        <a href="#SpaProjects">Projects</a>
-      </li>
-      <li>
-        <a href="#SpaContacts">Contact</a>
-      </li>
+      {navItems.map((item) => (
+        <li key={item.href}>
+          <a href={item.href}>{item.text}</a>
+        </li>
+      ))}
     </NavigationListStyle>
   );
 };
