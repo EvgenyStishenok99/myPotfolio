@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import {Footer} from "./footer/Footer.tsx";
 
-
+// вынести футер отдельно
 export const SpaContacts = () => {
   return (
     <SpaContactsStyles id="SpaContacts">

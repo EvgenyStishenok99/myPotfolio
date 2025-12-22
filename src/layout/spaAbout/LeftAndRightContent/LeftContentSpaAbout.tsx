@@ -1,7 +1,7 @@
 import {LineBottom} from "../../../components/lineBottom/LineBottom.tsx";
 import styled from "styled-components";
 
-
+//создать компоненту с пропсами, убрать svg
 export const LeftContentSpaAbout = () => {
   return (
     <LeftContentSpaAboutStyle>
@@ -171,7 +171,7 @@ export const LeftContentSpaAbout = () => {
 };
 
 const LeftContentSpaAboutStyle = styled.div`
-  max-width: 710px;
+  max-width: 710px; // сделать в процентах
   h1 {
     font-family: "Poppins", sans-serif;
     font-weight: 700;

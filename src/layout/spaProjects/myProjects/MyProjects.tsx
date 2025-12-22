@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-
+//в отдельную компоненту вынести
 export const MyProjects = () => {
   return (
     <MyProjectsStyles>
@@ -277,7 +277,7 @@ const MyProjectsStyles = styled.div`
 
   .textBlock {
     display: flex;
-    max-width: 375px;
+    //max-width: 375px; 
     flex-direction: column;
     margin-left: 30px;
 
@@ -286,7 +286,7 @@ const MyProjectsStyles = styled.div`
   .project {
     //border: 2px solid #ff5733;
     border-radius: 20px;
-    width: 375px;
+    //width: 375px;
     height: 570px;
     box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.2);
     background: #fff;
@@ -297,8 +297,8 @@ const MyProjectsStyles = styled.div`
     margin-top: 0;
     margin-bottom: 12px;
     //border: 2px solid #0039ff;
-    max-width: 314px;
-    min-height: 130px;
+    max-width: 314px; // указать в процентах
+    min-height: 130px; // можно удалить 
     font-weight: 300;
     font-size: 18px;
     line-height: 144%;

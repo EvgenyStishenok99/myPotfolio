@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-
+// сделать style-components через const
 export const SpaMain = () => {
   return (
     <SpaMainStyle id="SpaMain">
@@ -32,10 +32,10 @@ const SpaMainStyle =  styled.div`
   padding: 246px 0 291px 0;
   .svg-background {
     position: absolute;
-    top: 66%;
-    left: 78%;
+    top: 62%;
+    left: 80%;
     transform: translate(-50%, -50%);
-    z-index: -1;
+    //z-index: 2;
     pointer-events: none;
     width: 770px;
     height: 770px;

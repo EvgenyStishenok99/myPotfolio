@@ -4,6 +4,8 @@ import styled from "styled-components";
 
 
 export const NavigationList = () => {
+ // создать массив данными и сделать это через map
+  // noinspection HtmlUnknownAnchorTarget
   return (
     <NavigationListStyle>
       <li>

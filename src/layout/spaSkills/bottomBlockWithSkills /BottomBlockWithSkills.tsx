@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-
+// создать svg компоненты
 export const BottomBlockWithSkills = () => {
   return (
     <BottomBlockWithSkillsStyles>

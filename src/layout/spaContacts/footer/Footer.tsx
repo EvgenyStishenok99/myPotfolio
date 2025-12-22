@@ -34,7 +34,7 @@ export const Footer = () => {
   );
 };
 
-const FooterStyles = styled.div`
+const FooterStyles = styled.footer`
   margin-top: auto; /* для прижатия к низу */
   .topPart{
     display: flex;
