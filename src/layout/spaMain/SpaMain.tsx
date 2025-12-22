@@ -1,27 +1,24 @@
 import styled from "styled-components";
 
-// сделать style-components через const
+
 export const SpaMain = () => {
   return (
     <SpaMainStyle id="SpaMain">
-
     <span>
 Hi 👋,<br/>
 My name is<br/>
-<mark className="myName">Evgeny ST</mark><br/>
+<MyName>Evgeny ST</MyName><br/>
 I build things for web
     </span>
-      <div className="svg-background">
+      <SvgBackground>
         <img src="/public/Abstract.svg" alt="background" />
-      </div>
-      <div className= "avatar">
+      </SvgBackground>
+      <Avatar>
       <img
         src="/public/myPhoto.jpg"
         alt="myPhoto"
       />
-      </div>
-
-
+      </Avatar>
     </SpaMainStyle>
   );
 };
@@ -30,7 +27,22 @@ const SpaMainStyle =  styled.div`
   display: flex;
   justify-content: space-between;
   padding: 246px 0 291px 0;
-  .svg-background {
+  span{
+    font-family: "Poppins", sans-serif;;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 121%;
+    letter-spacing: -0.02em;
+    color: #42446e;
+  }
+  `
+const MyName = styled.mark`
+    background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  `
+const SvgBackground = styled.div`
     position: absolute;
     top: 62%;
     left: 80%;
@@ -39,40 +51,30 @@ const SpaMainStyle =  styled.div`
     pointer-events: none;
     width: 770px;
     height: 770px;
-
     img {
       width: 100%;
       height: 100%;
       opacity: 0.25;
     }
-  }
-  .myName{
-    background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-span{
-  font-family: "Poppins", sans-serif;;
-  font-weight: 700;
-  font-size: 58px;
-  line-height: 121%;
-  letter-spacing: -0.02em;
-  color: #42446e;
-}
-  .avatar {
-    display: inline-block;
-    padding: 8px; /* Толщина обводки */
-    background: linear-gradient(45deg, #ff0090, #ffffff, #000000, #6611ff);
-    border-radius: 230px;
-
-  }
-
+  `
+const Avatar = styled.div`
+  display: inline-block;
+  padding: 8px; /* Толщина обводки */
+  background: linear-gradient(45deg, #ff0090, #ffffff, #000000, #6611ff);
+  border-radius: 230px;
   img {
     border-radius: 230px;
     width: 349px;
     height: 349px;
     display: block;
-
   }
 `
+
+
+
+
+
+
+
+
+
