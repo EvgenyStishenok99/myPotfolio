@@ -14,21 +14,22 @@ import {
 export const Footer = () => {
   return (
     <FooterStyles>
-      <div className="topPart">
+      <TopPart>
         <LogoBlack/>
-        <div className="rightTopPart">
-          <p className="numberAndMail">+375 33 653 65 07</p>
-          <p className="numberAndMail">samurai.it-incubator.io/ru</p>
+        <RightTopPart>
+          <NumberAndMail>+375 33 653 65 07</NumberAndMail>
+          <NumberAndMail>samurai.it-incubator.io/ru</NumberAndMail>
           <SocialMediaDarkBlue/>
-        </div>
-      </div>
+        </RightTopPart>
+      </TopPart>
       <LineBottom/>
-      <div className="bottomPart">
+      <BottomPart>
         <NavigationList18pxForFooter/>
-        <p className="signature">Designed and
-          built by <mark className="EvgenyST">Evgeny ST</mark> with
-          <mark className="Love"> Love </mark> & <mark className="Coffee"> Coffee </mark></p>
-      </div>
+        <Signature>Designed and
+          built by <GradientFill>Evgeny ST</GradientFill> with
+          <GradientFill> Love </GradientFill> & <GradientFill> Coffee </GradientFill>
+        </Signature>
+      </BottomPart>
 
     </FooterStyles>
   );
@@ -36,39 +37,38 @@ export const Footer = () => {
 
 const FooterStyles = styled.footer`
   margin-top: auto; /* для прижатия к низу */
-  .topPart{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 44px;
-  }
-  .rightTopPart{
-    display: flex;
-    gap:35px;
-  }
-  .numberAndMail{
-   
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 144%;
-    color: #42446e;
-  }
-  .bottomPart{
-    display: flex;
-    justify-content: space-between;
-  }
-  .signature{
-    
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 144%;
-    text-align: center;
-    color: #666;
-  }
-  .EvgenyST,.Love,.Coffee{
-    background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  
+`
+const TopPart = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 44px;
+`
+const RightTopPart = styled.div`
+  display: flex;
+  gap:35px;
+`
+const NumberAndMail = styled.p`
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 144%;
+  color: #42446e;
+`
+const BottomPart = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+const Signature = styled.p`
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 144%;
+  text-align: center;
+  color: #666;
+`
+
+const GradientFill = styled.mark`
+  background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 `
