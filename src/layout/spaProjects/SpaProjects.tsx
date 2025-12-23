@@ -5,11 +5,11 @@ import {MyProjects} from "./myProjects/MyProjects.tsx";
 export const SpaProjects = () => {
   return (
     <SpaProjectsStyles id="SpaProjects">
-      <div className="topBlock">
-        <h1 className="mainH1">Projects</h1>
-        <p className="mainP"> Things I’ve built so far</p>
+      <TopBlock>
+        <MainH1>Projects</MainH1>
+        <MainP> Things I’ve built so far</MainP>
        <MyProjects/>
-      </div>
+      </TopBlock>
     </SpaProjectsStyles>
   );
 };
@@ -17,22 +17,22 @@ export const SpaProjects = () => {
 const SpaProjectsStyles = styled.div`
   padding-top: 201px;
   font-family: "Poppins", sans-serif;
-  .mainH1 {
 
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 54%;
-    text-align: center;
-    color: #42446e;
-  }
-
-  .mainP {
-margin-bottom: 110px;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 81%;
-    text-align: center;
-    color: #666;
-  }
-
+`
+const MainP = styled.p`
+  margin-bottom: 110px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 81%;
+  text-align: center;
+  color: #666;
+`
+const   MainH1 = styled.h1`
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 54%;
+  text-align: center;
+  color: #42446e;
+`
+const TopBlock = styled.div`
 `

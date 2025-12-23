@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import abstractSvg from './Abstract.svg';
 
 
 export const SpaMain = () => {
@@ -11,7 +12,7 @@ My name is<br/>
 I build things for web
     </span>
       <SvgBackground>
-        <img src="/public/Abstract.svg" alt="background" />
+        <img src={abstractSvg}  alt="background"/>
       </SvgBackground>
       <Avatar>
       <img
