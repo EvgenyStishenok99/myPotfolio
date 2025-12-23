@@ -1,14 +1,19 @@
 import styled from "styled-components";
 import {MyProjects} from "./myProjects/MyProjects.tsx";
+import React from "react";
+
+interface SpaProjectsProps {
+  darkMode: boolean;
+}
+export const SpaProjects: React.FC<SpaProjectsProps> = ({darkMode}) => {
 
 
-export const SpaProjects = () => {
   return (
-    <SpaProjectsStyles id="SpaProjects">
+    <SpaProjectsStyles  id="SpaProjects" >
       <TopBlock>
         <MainH1>Projects</MainH1>
         <MainP> Things I’ve built so far</MainP>
-       <MyProjects/>
+       <MyProjects darkMode={darkMode} />
       </TopBlock>
     </SpaProjectsStyles>
   );
@@ -17,6 +22,7 @@ export const SpaProjects = () => {
 const SpaProjectsStyles = styled.div`
   padding-top: 201px;
   font-family: "Poppins", sans-serif;
+  
 
 `
 const MainP = styled.p`
@@ -35,4 +41,5 @@ const   MainH1 = styled.h1`
   color: #42446e;
 `
 const TopBlock = styled.div`
+  
 `

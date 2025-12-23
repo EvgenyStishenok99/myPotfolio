@@ -8,12 +8,18 @@ import {SpaProjects} from "./layout/spaProjects/SpaProjects.tsx";
 import {SpaContacts} from "./layout/spaContacts/SpaContacts.tsx";
 import {Footer} from "./layout/footer/Footer.tsx";
 
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
+
+// Интерфейс для пропсов AppStyle
+interface AppStyleProps {
+  darkMode: boolean;
+}
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
   useEffect(() => {
+    // Применяем класс к body для глобальной темы
     if (darkMode) {
       document.body.classList.add('dark-theme');
       localStorage.setItem('theme', 'dark');
@@ -30,12 +36,13 @@ function App() {
           onClick={() => setDarkMode(!darkMode)}
           style={{
             position: "fixed",
+
             top: '15px',
             right: '1px',
             zIndex: 1000,
             padding: '8px 12px',
-            background: darkMode ? '#333' : '#fff',
-            color: darkMode ? '#fff' : '#333',
+            // background: darkMode ? 'linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%)' : 'linear-gradient(90deg,#e70faa,  2.6%, #13b0f5, 100%)',
+            color: darkMode ? '#ffffff' : '#333',
             border: 'none',
             borderRadius: '40px',
             cursor: 'pointer'
@@ -44,11 +51,11 @@ function App() {
           {darkMode ? '☀️ ' : '🌙 '}
         </button>
 
-        <Header darkMode={darkMode} /> {/* Передаем darkMode в Header */}
+        <Header darkMode={darkMode} />
         <SpaMain />
         <SpaAbout />
         <SpaSkills />
-        <SpaProjects />
+        <SpaProjects darkMode={darkMode}/>
         <SpaContacts />
         <Footer />
       </Container>
@@ -58,9 +65,10 @@ function App() {
 
 export default App
 
-const AppStyle = styled.div`
-  background-color: ${props => props.darkMode ? '#121212' : 'whitesmoke'};
-  color: ${props => props.darkMode ? '#ffffff' : '#333333'};
+// Явно указываем тип для styled компонента
+const AppStyle = styled.div<AppStyleProps>`
+  background-color: ${props => props.darkMode ? '#121212' : '#ffffff'};
+ 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -72,4 +80,8 @@ const Container = styled.div`
   max-width: 1230px;
   width: 100%;
   padding: 0 15px;
+  button{
+    background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
+  }
+  
 `
