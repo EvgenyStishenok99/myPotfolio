@@ -6,18 +6,20 @@ import {SpaAbout} from "./layout/spaAbout/SpaAbout.tsx";
 import {SpaSkills} from "./layout/spaSkills/SpaSkills.tsx";
 import {SpaProjects} from "./layout/spaProjects/SpaProjects.tsx";
 import {SpaContacts} from "./layout/spaContacts/SpaContacts.tsx";
+import {Footer} from "./layout/footer/Footer.tsx";
 
 function App() {
     return (
         <AppStyle>
-          <div className="Container">
+          <Container>
             <Header/>
             <SpaMain/>
             <SpaAbout/>
             <SpaSkills/>
             <SpaProjects/>
             <SpaContacts/>
-          </div>
+            <Footer/>
+          </Container>
         </AppStyle>
     )
 }
@@ -31,15 +33,9 @@ const AppStyle = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  
-  .Container {
-    max-width: 1230px;
-    //border: 2px solid #0039ff;
-    
-   
-  }
-  
-
+`
+const Container = styled.div`
+  max-width: 1230px;
+  //border: 2px solid #0039ff;
 `
 
