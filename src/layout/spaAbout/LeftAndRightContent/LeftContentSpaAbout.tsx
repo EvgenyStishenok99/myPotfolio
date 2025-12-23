@@ -3,10 +3,14 @@ import styled from "styled-components";
 import {Place} from "../../../../public/svg for spaAbout/Place.tsx";
 import {Location} from "../../../../public/svg for spaAbout/Location.tsx";
 import {Date} from "../../../../public/svg for spaAbout/Date.tsx";
+import React from "react";
+
+interface LeftContentSpaAboutProps {
+  darkMode: boolean;
+}
 
 
-//создать компоненту с пропсами
-export const LeftContentSpaAbout = () => {
+export const LeftContentSpaAbout: React.FC<LeftContentSpaAboutProps> = ({ darkMode }) => {
   const workExperience = [
     {
       // id: 1,
@@ -43,9 +47,9 @@ export const LeftContentSpaAbout = () => {
   return (
 
 
-  <LeftContentSpaAboutStyle>
+  <LeftContentSpaAboutStyle darkMode={darkMode}>
     <h1>About Me</h1>
-    <ForAboutMe>
+    <ForAboutMe darkMode={darkMode}>
       Entry-level Web Developer with strong theoretical knowledge and high
       motivation to learn. Currently honing my practical skills in
       JavaScript and React.js. I am a diligent, detail-focused individual
@@ -77,7 +81,7 @@ export const LeftContentSpaAbout = () => {
             </BottomOfBlock>
           </LeftSide>
           <RightSide>
-            <GreenIcon>{job.type}</GreenIcon>
+            <GreenIcon darkMode={darkMode}>{job.type}</GreenIcon>
             <LeftRightBottomOfBlock>
               <SvgPictures>
                 <Date />
@@ -114,7 +118,7 @@ export const LeftContentSpaAbout = () => {
             </BottomOfBlock>
           </LeftSide>
           <RightSide>
-            <GreenIcon>{edu.type}</GreenIcon>
+            <GreenIcon darkMode={darkMode} >{edu.type}</GreenIcon>
             <LeftRightBottomOfBlock>
               <SvgPictures>
                 <Date />
@@ -131,7 +135,7 @@ export const LeftContentSpaAbout = () => {
   );
 };
 
-const LeftContentSpaAboutStyle = styled.div`
+const LeftContentSpaAboutStyle = styled.div<{ darkMode: boolean }>`
   max-width:58%; 
   h1 {
     font-family: "Poppins", sans-serif;
@@ -139,19 +143,27 @@ const LeftContentSpaAboutStyle = styled.div`
     font-size: 42px;
     line-height: 124%;
     letter-spacing: -0.01em;
-    color: #42446e;
+   color: ${props =>
+      props.darkMode
+        ? '#a7a7a7'
+        : '#42446e'
+    };
   }
 `
 const BlockForWorkExperience = styled.div`
   display: flex;
   justify-content: space-between;
 `
-const ForAboutMe = styled.div`
+const ForAboutMe = styled.div<{ darkMode: boolean }>`
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 18px;
   line-height: 144%;
-  color: #666;
+  color: ${props =>
+    props.darkMode
+      ? '#a7a7a7'  
+      : '#666' 
+  };
   margin: 38px 0;
 `
 const LeftSide = styled.div`
@@ -193,15 +205,21 @@ const MyPlace = styled.p`
 const RightSide = styled.div`
   
 `
-const GreenIcon = styled.p`
+const GreenIcon = styled.p<{ darkMode: boolean }>`
   font-family: "Poppins", sans-serif;;
   font-weight: 600;
   font-size: 9px;
   line-height: 289%;
   text-align: center;
-  color: #018c0f;
+  color: ${props =>
+  props.darkMode
+    ? '#d7ffe0'  // Темный режим с прозрачностью
+    : '#018c0f'};
 
-  background: #d7ffe0;
+  background: ${props =>
+    props.darkMode
+      ? '#018c0f'  // Темный режим с прозрачностью
+      : '#d7ffe0'};
   border-radius: 100px;
   width: 84px;
   height: 24px;
