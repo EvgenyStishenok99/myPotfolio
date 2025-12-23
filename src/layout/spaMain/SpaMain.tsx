@@ -1,10 +1,13 @@
 import styled from "styled-components";
 import myPhoto from "../../../public/myPhoto.jpg"
+import React from "react";
+interface SpaMainProps {
+  darkMode: boolean;
+}
 
-
-export const SpaMain = () => {
+export const SpaMain:React.FC<SpaMainProps> = ({ darkMode }) => {
   return (
-    <SpaMainStyle id="SpaMain">
+    <SpaMainStyle darkMode={darkMode} id="SpaMain">
     <span>
 Hi 👋,<br/>
 My name is<br/>
@@ -24,7 +27,7 @@ I build things for web
   );
 };
 
-const SpaMainStyle =  styled.div`
+const SpaMainStyle =  styled.div<{ darkMode: boolean }>`
   display: flex;
   justify-content: space-between;
   padding: 246px 0 291px 0;
@@ -34,8 +37,12 @@ const SpaMainStyle =  styled.div`
     font-size: 58px;
     line-height: 121%;
     letter-spacing: -0.02em;
-    color: #42446e;
-  }
+    color: ${props =>
+      props.darkMode
+        ? '#d9d9d9'  // Темный режим с прозрачностью
+        : '#42446e'
+    };
+    
   `
 const MyName = styled.mark`
     background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);

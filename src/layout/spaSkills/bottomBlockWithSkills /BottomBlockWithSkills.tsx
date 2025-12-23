@@ -11,9 +11,13 @@ import {GitSvg} from "./svg for BottomBlockWithSkills/GitSvg.tsx";
 import {GreensockSvg} from "./svg for BottomBlockWithSkills/GreensockSvg.tsx";
 import {VscodeSvg} from "./svg for BottomBlockWithSkills/VscodeSvg.tsx";
 import {GitHubSvg} from "./svg for BottomBlockWithSkills/GitHubSvg.tsx";
+import React from "react";
+interface BottomBlockWithSkillsProps {
+  darkMode: boolean;
+}
 
 // создать svg компоненты
-export const BottomBlockWithSkills = () => {
+export const BottomBlockWithSkills:React.FC<BottomBlockWithSkillsProps> = ({ darkMode }) => {
   return (
     <BottomBlockWithSkillsStyles>
       <HtmlSvg/>
@@ -25,9 +29,9 @@ export const BottomBlockWithSkills = () => {
       <TailWindSvg/>
       <SassSvg/>
       <GitSvg/>
-      <GreensockSvg/>
+      <GreensockSvg darkMode={darkMode}/>
       <VscodeSvg/>
-      <GitHubSvg/>
+      <GitHubSvg darkMode={darkMode}/>
     </BottomBlockWithSkillsStyles>
   );
 };

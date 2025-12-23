@@ -52,9 +52,9 @@ function App() {
         </button>
 
         <Header darkMode={darkMode} />
-        <SpaMain />
+        <SpaMain darkMode={darkMode}/>
         <SpaAbout />
-        <SpaSkills />
+        <SpaSkills darkMode={darkMode}/>
         <SpaProjects darkMode={darkMode}/>
         <SpaContacts />
         <Footer />
