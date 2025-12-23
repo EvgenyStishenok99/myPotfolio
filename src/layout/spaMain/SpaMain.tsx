@@ -12,7 +12,7 @@ My name is<br/>
 I build things for web
     </span>
       <SvgBackground>
-        <img src="/public/Abstract.svg" alt="background"/>
+        <img src="/Abstract.svg" alt="background"/>
       </SvgBackground>
       <Avatar>
       <img
