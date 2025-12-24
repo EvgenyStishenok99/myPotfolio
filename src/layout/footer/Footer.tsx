@@ -2,29 +2,33 @@ import styled from "styled-components";
 import {LineBottom} from "../../components/lineBottom/LineBottom.tsx";
 
 
-import {LogoBlack} from "../../components/logo/logoBlack.tsx";
+import {LogoBlackOrWhite} from "../../components/logo/logoBlackOrWhite.tsx";
 import {
   SocialMediaDarkBlue
 } from "../../components/social media/SocialMediaDarkBlue.tsx";
 import {
   NavigationList18pxForFooter
 } from "../../components/navigationList/NavigationList18pxForFooter.tsx";
+import React from "react";
 
+interface FooterProps {
+  darkMode: boolean;
+}
 
-export const Footer = () => {
+export const Footer: React.FC<FooterProps> = ({darkMode}) => {
   return (
     <FooterStyles>
       <TopPart>
-        <LogoBlack/>
+        <LogoBlackOrWhite darkMode={darkMode}/>
         <RightTopPart>
-          <NumberAndMail>+375 33 653 65 07</NumberAndMail>
-          <NumberAndMail>samurai.it-incubator.io/ru</NumberAndMail>
-          <SocialMediaDarkBlue/>
+          <NumberAndMail darkMode={darkMode}>+375 33 653 65 07</NumberAndMail>
+          <NumberAndMail darkMode={darkMode}>samurai.it-incubator.io/ru</NumberAndMail>
+          <SocialMediaDarkBlue darkMode={darkMode}/>
         </RightTopPart>
       </TopPart>
       <LineBottom/>
       <BottomPart>
-        <NavigationList18pxForFooter/>
+        <NavigationList18pxForFooter darkMode={darkMode}/>
         <Signature>Designed and
           built by <GradientFill>Evgeny ST</GradientFill> with
           <GradientFill> Love </GradientFill> & <GradientFill> Coffee </GradientFill>
@@ -47,12 +51,16 @@ const RightTopPart = styled.div`
   display: flex;
   gap:35px;
 `
-const NumberAndMail = styled.p`
+const NumberAndMail = styled.p<{ darkMode: boolean }>`
 
   font-weight: 400;
   font-size: 18px;
   line-height: 144%;
-  color: #42446e;
+  color:${props =>
+  props.darkMode
+    ? '#a7a7a7'  // Темный режим с прозрачностью
+    : '#42446e' // Светлый режим с прозрачностью
+};
 `
 const BottomPart = styled.div`
   display: flex;

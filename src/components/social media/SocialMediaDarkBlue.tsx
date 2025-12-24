@@ -9,20 +9,24 @@ import {
   LinkedinDarkBlue
 } from "../../../public/svg for social media /darkBlue/LinkedinDarkBlue.tsx";
 
+import React from "react";
 
-export const SocialMediaDarkBlue = () => {
+interface SocialMediaDarkBlueProps {
+  darkMode: boolean;
+}
+export const SocialMediaDarkBlue: React.FC<SocialMediaDarkBlueProps> = ({ darkMode }) => {
   const socialItems = [
     {
       href: "https://github.com/EvgenyStishenok99",
-      icon: <GitHubDarkBlue/>
+      icon: <GitHubDarkBlue darkMode={darkMode}/>
     },
     {
       href: "https://x.com/elonmusk",
-      icon: <TwitterDarkBlue/>
+      icon: <TwitterDarkBlue darkMode={darkMode}/>
     },
     {
       href: "https://habr.com/ru/news/400437/",
-      icon: <LinkedinDarkBlue/>
+      icon: <LinkedinDarkBlue darkMode={darkMode}/>
     }
   ];
   return (

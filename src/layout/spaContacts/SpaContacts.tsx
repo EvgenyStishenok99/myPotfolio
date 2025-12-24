@@ -1,12 +1,16 @@
 import styled from "styled-components";
+import React from "react";
 
+interface SpaContactsProps {
+  darkMode: boolean;
+}
 
 // вынести футер отдельно
-export const SpaContacts = () => {
+export const SpaContacts: React.FC<SpaContactsProps> = ({ darkMode }) => {
   return (
     <SpaContactsStyles id="SpaContacts">
     <MyMail>
-      <TextForaMail>For any questions please mail me:</TextForaMail>
+      <TextForaMail darkMode={darkMode}>For any questions please mail me:</TextForaMail>
       <Mail>stishenok999@mail.ru</Mail>
     </MyMail>
     </SpaContactsStyles>
@@ -21,14 +25,18 @@ const MyMail = styled.div`
   flex-direction: column;
   align-items: center;
 `
-const TextForaMail = styled.p`
+const TextForaMail = styled.p<{ darkMode: boolean }>`
   margin: 0 0 9px 0 ;
   font-weight: 700;
   font-size: 58px;
   line-height: 121%;
   letter-spacing: -0.02em;
   text-align: center;
-  color: #1e0e62;
+  color: ${props =>
+  props.darkMode
+    ? '#ccc'  // Темный режим с прозрачностью
+    : '#1e0e62' // Светлый режим с прозрачностью
+};
 `
 const Mail = styled.p`
 
