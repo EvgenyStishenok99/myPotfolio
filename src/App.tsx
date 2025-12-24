@@ -35,17 +35,7 @@ function App() {
         <button
           onClick={() => setDarkMode(!darkMode)}
           style={{
-            position: "fixed",
 
-            top: '15px',
-            right: '10px',
-            zIndex: 1000,
-            padding: '8px 12px',
-            // background: darkMode ? 'linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%)' : 'linear-gradient(90deg,#e70faa,  2.6%, #13b0f5, 100%)',
-            color: darkMode ? '#ffffff' : '#333',
-            border: 'none',
-            borderRadius: '40px',
-            cursor: 'pointer'
           }}
         >
           {darkMode ? '☀️ ' : '🌙 '}
@@ -82,6 +72,14 @@ const Container = styled.div`
   padding: 0 15px;
   button{
     background: linear-gradient(90deg, #13b0f5 2.6%, #e70faa 100%);
+    position: fixed;
+    top: 15px;
+    right: 10px;
+    z-Index: 1000;
+    padding: 8px 12px;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
   }
   
 `
